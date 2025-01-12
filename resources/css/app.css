@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Table pagination: active page highlight */
+.mary-table-pagination span[aria-current="page"] > span {
+    @apply bg-primary text-base-100
+}
+
+/* Table pagination: for dark mode*/
+.mary-table-pagination span[aria-disabled="true"] span {
+    @apply bg-inherit
+}
+
+/* Table pagination: for dark mode */
+.mary-table-pagination button {
+    @apply bg-base-100
+}
+
+:root {
+    --avo-blue: 39 126 160;
+    --avo-blue-hover: 31 100 128;
+    --avo-blue-lite: 115 191 221;
+    --avo-white: 248 246 245;
+    --avo-white-hover: 240 240 240;
+    --avo-black: 34 34 34;
+    --avo-black-hover: 31 31 31;
+    --avo-yellow: 250 197 108;
+    --avo-yellow-hover: 249 182 70;
+    --avo-red: 239 100 89;
+    --avo-red-hover: 236 67 53;
+    --avo-green: 39 160 135;
+    --avo-gray: 231 227 227;
+    --avo-dark-gray: 219 219 219;
+
+}
+
